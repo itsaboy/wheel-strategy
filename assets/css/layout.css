@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Body Grid
+========================================================================== */
+
+.body-grid-container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;   
+}
+
+/* Body Grid Item IDs */
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* ==========================================================================
+   Header Grid Layout
+========================================================================== */
+
+.header-grid-container {
+    display: grid;
+    grid-template-areas:
+    "header-heading";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+/* Header Grid Items */
+
+#header-heading {
+    grid-area: header-heading;
+}
+
+/* ==========================================================================
+   Main Grid Layout
+========================================================================== */
+
+.main-grid-container {
+    display: grid;
+    grid-template-areas:
+    "wheel";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    place-items: center;
+}
+
+/* Main Grid Items */
+
+#wheel {
+    grid-area: wheel;
+}
+
+/* ==========================================================================
+   Footer Grid Layout
+========================================================================== */
+
+.footer-grid-container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
